@@ -1,6 +1,16 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
+@import "./helpers/utilities";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+// mixin
+@import "./mixin/mixin";
 
+// layout
+@import "./layout/header";
+@import "./layout/footer";
 
-@import './layout/index.scss'
+// uti
+@import "./uti/triangle";
+// page
+@import './page/index';
+@import './page/project';
