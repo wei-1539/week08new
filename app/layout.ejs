@@ -11,7 +11,7 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Squada+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Paytone+One&family=Squada+One&display=swap" rel="stylesheet">
     <!-- fontawesome.com -->
     <script src="https://kit.fontawesome.com/fc0067d5fd.js" crossorigin="anonymous"></script>
     <!-- swiper -->
@@ -64,7 +64,7 @@
               <li class="nav-item border-start border-dark py-8 px-12">
                 <a class="nav-link fw-bold" href="#">市值</a>
               <li class="nav-item border-start border-dark py-8 ps-12">
-                <a class="nav-link " href="#">
+                <a class="nav-link " href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <i class="fa-solid fa-wallet fs-5" ></i>
                 </a>
               </li>
@@ -80,6 +80,31 @@
     <footer class="bg-secondary py-4">
       <p class="text-center mb-0 ">© ART NFT. All Rights Reserved</p>
     </footer>
+
+    <!-- 錢包 Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content ">
+          <div class="modal-header border-dark text-center justify-content-center">
+            <h5 class="modal-title" id="exampleModalLabel">連結你的錢包</h5>
+          </div>
+          <div class="modal-body py-6">
+            <div class="row">
+              <div class="col-6">
+                <a href="#" class="border border-dark p-4 d-block">
+                  <img class="img-fluid me-4" src="./assets/images/week8-202207/logo/connect01.png" alt="" style="width: 16px;">
+                  MetaMask
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center border-0">
+            <button type="button" class="btn btn-primary text-light px-12 p" data-bs-dismiss="modal">連結錢包</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="./assets/js/vendors.js"></script>
     <!-- swiper -->

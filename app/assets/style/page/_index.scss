@@ -1,58 +1,188 @@
-
-.artist{
-  .swiper {
-    width: 100%;
-    height: 440px;
-    &-img{
-      position: absolute;
-      height: 90%;
-      img{
-        width: 100%;
-      height: 100%;
-      object-fit: cover;
-      }
+.firstView{
+  .square{
+    &-Img{
+      background-size: cover;
+      background-position:center;
+      background-repeat: no-repeat;
+      height: 375px;
     }
-    &-slide {
-      // background-position: center;
-      // background-size: cover;
-      width: 50%;
+    &-commend1{
+      background-image: url(../images/week8-202207/art02.jpg);
+    }
+    &-commend2{
+      background-image: url(../images/week8-202207/art21.jpg);
     }
   }
-  .swiper-pagination {
-    // position: unset;
-    width: auto;
-    .swiper-pagination-bullet {
-      background-color: $dark;
-      opacity: initial;
-      border-radius: 0;
-      &-active {
-        width: 16px;
-        background-color: $primary;
-        // border-radius: 100px;
-      }
-    }
-  }
+  
 }
-.join {
-  .control {
+.ranking{
+  // 字型
+  .font-pay{
+    font-family: 'Paytone One', sans-serif;
+  }
+  // 圖片
+  &-Img{
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat; 
     position: relative;
-
-    &::before {
+    // 圖片hover
+    &::before{
       content: "";
-      border-top: 4px solid $dark;
-      position: absolute;
-      left: 0;
-      top: -8px;
+      background-color: transparent;
       width: 100%;
+      height: 100%;
+      display: block;
+      opacity: 0.5;
     }
-
-    &::after {
+    &::after{
       content: "";
-      border-top: 4px solid $dark;
       position: absolute;
-      left: 0;
-      bottom: -8px;
-      width: 100%;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+      border-style: solid;
+      border-width: 0 0 16px 16px;
+      border-color: transparent transparent $primary transparent;
+      
+    }
+    &-btn{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 3;
+      opacity: 0;
+      &:hover{
+        opacity: 1;
+      }
+    }
+    &:hover{
+      &::before{
+        background-color: $dark;
+      }
+      &::after{
+        opacity: 1;
+      }
+    }
+    
+    // 圖片大小
+    &-lg{
+      height: 380px;
+    }
+    &-sm{
+      width: 87px;
+      height: 95px;
+      position: relative;
+      &::before{
+        content:"more";
+        color: #fff;
+        opacity: 1;
+        font-size: 20px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
+      &::after{
+        content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-style: solid;
+      border-width: 0 0 16px 16px;
+      border-color: transparent transparent $primary transparent;
+      }
+      &:hover{
+        &::before{
+          display: flex;
+          opacity: 0.7;
+        }
+      }
     }
   }
+  // 圖片來源
+  &-commend1{
+    background-image: url(../images/week8-202207/art04.jpg);
+  }
+  &-commend2{
+    background-image: url(../images/week8-202207/art05.jpg);
+  }
+  &-commend3{
+    background-image: url(../images/week8-202207/art06.jpg);
+  }
+  &-commend4{
+    background-image: url(../images/week8-202207/art13.jpg);
+  }
+  &-commend5{
+    background-image: url(../images/week8-202207/art07.jpg);
+  }
+  &-commend6{
+    background-image: url(../images/week8-202207/art08.jpg);
+  }
+
+  // 左上數字
+  &-number{
+    &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      background-color: $white;
+      width: 48px;
+      height: 48px;
+      padding: 8px;
+      border-right: 1px solid $dark;
+      border-bottom: 1px solid $dark;
+      font-family: 'Paytone One', sans-serif;
+      font-size: 28px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-1{
+      &::before{
+        content:"1";
+      }
+    }
+    &-2{
+      &::before{
+        content:"2";
+      }
+    }
+    &-3{
+      &::before{
+        content:"3";
+      }
+    }
+  }
+
 }
+
+.artist {
+  
+}
+
+
+  .join {
+    .control {
+      position: relative;
+
+      &::before {
+        content: "";
+        border-top: 4px solid $dark;
+        position: absolute;
+        left: 0;
+        top: -8px;
+        width: 100%;
+      }
+
+      &::after {
+        content: "";
+        border-top: 4px solid $dark;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 100%;
+      }
+    }
+  }
