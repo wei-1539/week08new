@@ -60,14 +60,14 @@ current: index
         <!-- Nav tabs -->
         <ul class="nav nav-tabs mb-lg-10 mb-6" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active fs-lg-1 fs-3 px-lg-12 py-lg-4" id="artWorks-tab" data-bs-toggle="tab"
-                    data-bs-target="#artWorks" type="button" role="tab" aria-controls="home" aria-selected="true">Art
+                <button class="nav-link  fs-lg-1 fs-3 px-lg-12 py-lg-4" id="artWorks-tab" data-bs-toggle="tab"
+                    data-bs-target="#artWorks" type="button" role="tab" aria-controls="home" aria-selected="false">Art
                     Works<span class="fs-6 fw-bold ms-4 d-lg-inline-block d-none">系列作品</span></button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link fs-lg-1 fs-3 px-lg-12 py-lg-4" id="collection-tab" data-bs-toggle="tab"
+                <button class="nav-link active fs-lg-1 fs-3 px-lg-12 py-lg-4" id="collection-tab" data-bs-toggle="tab"
                     data-bs-target="#collection" type="button" role="tab" aria-controls="profile"
-                    aria-selected="false">Collection<span
+                    aria-selected="true">Collection<span
                         class="fs-6 fw-bold ms-4 d-lg-inline-block d-none">收藏品</span></button>
             </li>
         </ul>
@@ -75,7 +75,7 @@ current: index
         <!-- Tab panes -->
         <div class="tab-content">
             <!-- 系列作品 -->
-            <div class="tab-pane active " id="artWorks" role="tabpanel" aria-labelledby="artWorks-tab">
+            <div class="tab-pane  " id="artWorks" role="tabpanel" aria-labelledby="artWorks-tab">
                 <div class=" border border-dark mb-lg-56 mb-0">
                     <div class="row justify-content-center triangleControl pt-lg-12 pb-lg-56 pt-8 position-relative">
                         <div class="col-lg-10 ">
@@ -158,91 +158,179 @@ current: index
 
             </div>
             <!-- 瀑布流 -->
-            <div class="tab-pane" id="collection" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="tab-pane active" id="collection" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="artwork pb-lg-20">
-                    <div class="row" data-masonry='{"percentPosition": true }'>
-                        <div class="col-lg-3 col-md-6 col-12 ">
-                            <div class="card border-0">
-                                <div class="bg-light p-lg-6">
-                                    <img class="img-fluid card-img-top " src="./assets/images/week8-202207/art09.jpg"
-                                        alt="">
+                    <div class="row artwork-control " data-masonry='{"percentPosition": true }'>
+                        <div class="col-lg-3 col-md-6 col-12 mb-lg-12 mb-6">
+                            <div class="card border-0  ">
+                                <div class="p-lg-6">
+                                    <div class="overlay bg-light position-relative ">
+                                        <img class="img-fluid card-img-top h-100"
+                                            src="./assets/images/week8-202207/art09.jpg" alt="">
+                                        <div class="overlay-text position-absolute text-light">
+                                            <p>唯一想擁有的人，唯一不可以擁有的</p>
+                                            <p class="mb-0">
+                                                <i class="fa-brands fa-ethereum"></i>
+                                                300
+                                            </p>
+                                        </div>
+                                        <a href="#"
+                                            class="overlay-link position-absolute triangle btn btn-light px-12 py-2 lh-1">MORE</a>
+                                    </div>
                                 </div>
                                 <div class="card-body border-bottom border-dark bg-gray-300 px-lg-0 py-lg-4 p-2">
                                     <p class="card-title fw-bold mb-0">區塊戀-他的私生活</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 ">
-                            <div class="card border-0">
-                                <div class="bg-light p-lg-6">
-                                    <img class="img-fluid card-img-top " src="./assets/images/week8-202207/art10.jpg"
-                                        alt="">
+                        <div class="col-lg-3 col-md-6 col-12 mb-lg-12 mb-6">
+                            <div class="card border-0  ">
+                                <div class="p-lg-6">
+                                    <div class="overlay bg-light position-relative ">
+                                        <img class="img-fluid card-img-top h-100"
+                                            src="./assets/images/week8-202207/art10.jpg" alt="">
+                                        <div class="overlay-text position-absolute text-light">
+                                            <p>夏娃的醜聞</p>
+                                            <p class="mb-0">
+                                                <i class="fa-brands fa-ethereum"></i>
+                                                300
+                                            </p>
+                                        </div>
+                                        <a href="#"
+                                            class="overlay-link position-absolute triangle btn btn-light px-12 py-2 lh-1">MORE</a>
+                                    </div>
                                 </div>
                                 <div class="card-body border-bottom border-dark bg-gray-300 px-lg-0 py-lg-4 p-2">
                                     <p class="card-title fw-bold mb-0">夏娃的醜聞</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 ">
-                            <div class="card border-0">
-                                <div class="bg-light p-lg-6">
-                                    <img class="img-fluid card-img-top " src="./assets/images/week8-202207/art02.jpg"
-                                        alt="">
+                        <div class="col-lg-3 col-md-6 col-12 mb-lg-12 mb-6">
+                            <div class="card border-0  ">
+                                <div class="p-lg-6">
+                                    <div class="overlay bg-light position-relative ">
+                                        <img class="img-fluid card-img-top h-100"
+                                            src="./assets/images/week8-202207/art02.jpg" alt="">
+                                        <div class="overlay-text position-absolute text-light">
+                                            <p>藍色啤酒海</p>
+                                            <p class="mb-0">
+                                                <i class="fa-brands fa-ethereum"></i>
+                                                300
+                                            </p>
+                                        </div>
+                                        <a href="#"
+                                            class="overlay-link position-absolute triangle btn btn-light px-12 py-2 lh-1">MORE</a>
+                                    </div>
                                 </div>
                                 <div class="card-body border-bottom border-dark bg-gray-300 px-lg-0 py-lg-4 p-2">
                                     <p class="card-title fw-bold mb-0">藍色啤酒海</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 ">
-                            <div class="card border-0">
-                                <div class="bg-light p-lg-6">
-                                    <img class="img-fluid card-img-top " src="./assets/images/week8-202207/art11.jpg"
-                                        alt="">
+                        <div class="col-lg-3 col-md-6 col-12 mb-lg-12 mb-6">
+                            <div class="card border-0  ">
+                                <div class="p-lg-6">
+                                    <div class="overlay bg-light position-relative ">
+                                        <img class="img-fluid card-img-top h-100"
+                                            src="./assets/images/week8-202207/art11.jpg" alt="">
+                                        <div class="overlay-text position-absolute text-light">
+                                            <p>沒有人愛我</p>
+                                            <p class="mb-0">
+                                                <i class="fa-brands fa-ethereum"></i>
+                                                300
+                                            </p>
+                                        </div>
+                                        <a href="#"
+                                            class="overlay-link position-absolute triangle btn btn-light px-12 py-2 lh-1">MORE</a>
+                                    </div>
                                 </div>
                                 <div class="card-body border-bottom border-dark bg-gray-300 px-lg-0 py-lg-4 p-2">
                                     <p class="card-title fw-bold mb-0">沒有人愛我</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 ">
-                            <div class="card border-0">
-                                <div class="bg-light p-lg-6">
-                                    <img class="img-fluid card-img-top " src="./assets/images/week8-202207/art12.jpg"
-                                        alt="">
+                        <div class="col-lg-3 col-md-6 col-12 mb-lg-12 mb-6">
+                            <div class="card border-0  ">
+                                <div class="p-lg-6">
+                                    <div class="overlay bg-light position-relative ">
+                                        <img class="img-fluid card-img-top h-100"
+                                            src="./assets/images/week8-202207/art12.jpg" alt="">
+                                        <div class="overlay-text position-absolute text-light">
+                                            <p>不哭不哭眼淚是珍珠</p>
+                                            <p class="mb-0">
+                                                <i class="fa-brands fa-ethereum"></i>
+                                                300
+                                            </p>
+                                        </div>
+                                        <a href="#"
+                                            class="overlay-link position-absolute triangle btn btn-light px-12 py-2 lh-1">MORE</a>
+                                    </div>
                                 </div>
                                 <div class="card-body border-bottom border-dark bg-gray-300 px-lg-0 py-lg-4 p-2">
                                     <p class="card-title fw-bold mb-0">不哭不哭眼淚是珍珠</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 ">
-                            <div class="card border-0">
-                                <div class="bg-light p-lg-6">
-                                    <img class="img-fluid card-img-top " src="./assets/images/week8-202207/art03.jpg"
-                                        alt="">
+                        <div class="col-lg-3 col-md-6 col-12 mb-lg-12 mb-6">
+                            <div class="card border-0  ">
+                                <div class="p-lg-6">
+                                    <div class="overlay bg-light position-relative ">
+                                        <img class="img-fluid card-img-top h-100"
+                                            src="./assets/images/week8-202207/art03.jpg" alt="">
+                                        <div class="overlay-text position-absolute text-light">
+                                            <p>十分鐘就到</p>
+                                            <p class="mb-0">
+                                                <i class="fa-brands fa-ethereum"></i>
+                                                300
+                                            </p>
+                                        </div>
+                                        <a href="#"
+                                            class="overlay-link position-absolute triangle btn btn-light px-12 py-2 lh-1">MORE</a>
+                                    </div>
                                 </div>
                                 <div class="card-body border-bottom border-dark bg-gray-300 px-lg-0 py-lg-4 p-2">
                                     <p class="card-title fw-bold mb-0">十分鐘就到</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 ">
-                            <div class="card border-0">
-                                <div class="bg-light p-lg-6">
-                                    <img class="img-fluid card-img-top " src="./assets/images/week8-202207/art04.jpg"
-                                        alt="">
+                        <div class="col-lg-3 col-md-6 col-12 mb-lg-12 mb-6">
+                            <div class="card border-0  ">
+                                <div class="p-lg-6">
+                                    <div class="overlay bg-light position-relative ">
+                                        <img class="img-fluid card-img-top h-100"
+                                            src="./assets/images/week8-202207/art04.jpg" alt="">
+                                        <div class="overlay-text position-absolute text-light">
+                                            <p>我這樣有美嗎</p>
+                                            <p class="mb-0">
+                                                <i class="fa-brands fa-ethereum"></i>
+                                                300
+                                            </p>
+                                        </div>
+                                        <a href="#"
+                                            class="overlay-link position-absolute triangle btn btn-light px-12 py-2 lh-1">MORE</a>
+                                    </div>
                                 </div>
                                 <div class="card-body border-bottom border-dark bg-gray-300 px-lg-0 py-lg-4 p-2">
                                     <p class="card-title fw-bold mb-0">我這樣有美嗎</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 ">
-                            <div class="card border-0">
-                                <div class="bg-light p-lg-6">
-                                    <img class="img-fluid card-img-top " src="./assets/images/week8-202207/art27.jpg"
-                                        alt="">
+                        <div class="col-lg-3 col-md-6 col-12 mb-lg-12 mb-6">
+                            <div class="card border-0  ">
+                                <div class="p-lg-6">
+                                    <div class="overlay bg-light position-relative ">
+                                        <img class="img-fluid card-img-top h-100"
+                                            src="./assets/images/week8-202207/art27.jpg" alt="">
+                                        <div class="overlay-text position-absolute text-light">
+                                            <p>我真的受傷了</p>
+                                            <p class="mb-0">
+                                                <i class="fa-brands fa-ethereum"></i>
+                                                300
+                                            </p>
+                                        </div>
+                                        <a href="#"
+                                            class="overlay-link position-absolute triangle btn btn-light px-12 py-2 lh-1">MORE</a>
+                                    </div>
                                 </div>
                                 <div class="card-body border-bottom border-dark bg-gray-300 px-lg-0 py-lg-4 p-2">
                                     <p class="card-title fw-bold mb-0">我真的受傷了</p>
