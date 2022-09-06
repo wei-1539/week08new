@@ -1,3 +1,16 @@
 #search{
     width: 288px;
 }
+
+.closeControl{
+    display: flex;
+    align-items: center;
+}
+.close{
+    display: none;
+}
+@include RWD(992px){
+    .nav-item{
+        width: 100%;
+    }
+}

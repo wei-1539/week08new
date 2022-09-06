@@ -1,8 +1,25 @@
 $(function() {
   console.log('Hello Bootstrap5');
 });
+// header start 
+// 搜尋icon
+$('.searchBtn').click(function(e){
+  $('.closeControl').toggleClass('close')
+  $('.navbar-toggler').toggleClass('close')
+  $('.navbar-brand').toggleClass('close')
+  $('.iconAll').toggleClass('w-100')
+});
+// 上一頁 icon
+$('.upLavel').click(function(e){
+  $('.closeControl').toggleClass('close')
+  $('.navbar-toggler').toggleClass('close')
+  $('.navbar-brand').toggleClass('close')
+  $('.iconAll').toggleClass('w-100')
+});
 
+// header end 
 
+// swiper start
 const swiper = new Swiper('.swiper-container', {
   centeredSlides: true,
   loop: true,
@@ -36,7 +53,7 @@ const swiper = new Swiper('.swiper-container', {
       },
   },
 });
-
+// swiper end 
 // $('.artwork-control').imagesLoaded().progress( function() {
 //   $('.artwork-control').masonry(); // 渲染整體畫面
 // });
