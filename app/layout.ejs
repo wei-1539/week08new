@@ -29,10 +29,10 @@
 
 </head>
 
-<body>
+<body class="bg-gray-300">
 
   <!-- 會用到的ICON -->
-  <i class="fa-solid fa-magnifying-glass"></i>
+  <!-- <i class="fa-solid fa-magnifying-glass"></i>
   <i class="fa-solid fa-wallet"></i>
   <i class="fa-brands fa-ethereum"></i>
   <i class="fa-solid fa-bars"></i>
@@ -43,7 +43,7 @@
   <i class="fa-solid fa-sort"></i>
   <i class="fa-solid fa-plus"></i>
   <i class="fa-solid fa-minus"></i>
-  <i class="fa-solid fa-check"></i>
+  <i class="fa-solid fa-check"></i> -->
 
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-secondary border-bottom border-dark p-0">
@@ -78,11 +78,11 @@
               </label>
             </li>
 
-            <li class="nav-item border-start-lg border-bottom border-dark py-lg-8 px-lg-12 py-6 text-center " style="margin-bottom: -4px ;">
+            <li class="nav-item border-start-lg border-bottom border-dark py-lg-8 px-lg-12 py-6 text-center " style="margin-bottom: -5px ;">
               <a class="nav-link fw-bold p-0 fs-lg-8 fs-7" href="probe.html">探索</a>
             </li>
             <li class="nav-item border-start-lg  border-dark py-lg-8 px-lg-12 p-6 text-center">
-              <a class="nav-link fw-bold p-0 fs-lg-8 fs-7" href="#">市值</a>
+              <a class="nav-link fw-bold p-0 fs-lg-8 fs-7" href="marketValue.html">市值</a>
             </li>
             <li class="nav-item border-start-lg  border-dark py-lg-8 ps-lg-12 pb-6 text-center">
               <a class="nav-link  p-0" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -111,18 +111,55 @@
             <h5 class="modal-title" id="exampleModalLabel">連結你的錢包</h5>
           </div>
           <div class="modal-body py-6">
-            <div class="row">
-              <div class="col-6">
-                <a href="#" class="border border-dark p-4 d-block">
+            <ul class="row g-2 list-unstyled mb-0">
+              <li class="col-lg-6">
+                <a href="#" class="btn-wallet p-4 d-block">
                   <img class="img-fluid me-4" src="./assets/images/week8-202207/logo/connect01.png" alt=""
                     style="width: 16px;">
                   MetaMask
                 </a>
-              </div>
-            </div>
+              </li>
+              <li class="col-lg-6">
+                <a href="#" class="btn-wallet p-4 d-block">
+                  <img class="img-fluid me-4" src="./assets/images/week8-202207/logo/connect02.png" alt=""
+                    style="width: 16px;">
+                    Coinbase Wallet
+                </a>
+              </li>
+              <li class="col-lg-6">
+                <a href="#" class="btn-wallet p-4 d-block">
+                  <img class="img-fluid me-4" src="./assets/images/week8-202207/logo/connect03.png" alt=""
+                    style="width: 16px;">
+                    WalletConnect
+                </a>
+              </li>
+              <li class="col-lg-6">
+                <a href="#" class="btn-wallet p-4 d-block">
+                  <img class="img-fluid me-4" src="./assets/images/week8-202207/logo/connect04.png" alt=""
+                    style="width: 16px;">
+                    Phantom
+                </a>
+              </li>
+              <li class="col-lg-6">
+                <a href="#" class="btn-wallet p-4 d-block">
+                  <img class="img-fluid me-4" src="./assets/images/week8-202207/logo/connect05.png" alt=""
+                    style="width: 16px;">
+                    Glow
+                </a>
+              </li>
+              <li class="col-lg-6">
+                <a href="#" class="btn-wallet p-4 d-block">
+                  <img class="img-fluid me-4" src="./assets/images/week8-202207/logo/connect06.png" alt=""
+                    style="width: 16px;">
+                    Fortmatic
+                </a>
+              </li>
+              
+
+            </ul>
           </div>
-          <div class="modal-footer justify-content-center border-0">
-            <button type="button" class="btn btn-primary text-light px-12 p" data-bs-dismiss="modal">連結錢包</button>
+          <div class="modal-footer justify-content-center border-0 p-0 pb-8">
+            <button type="button" class="btn btn-primary border text-light px-12 py-2 m-0" data-bs-dismiss="modal">連結錢包</button>
             <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
           </div>
         </div>

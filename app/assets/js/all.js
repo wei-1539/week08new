@@ -54,6 +54,28 @@ const swiper = new Swiper('.swiper-container', {
   },
 });
 // swiper end 
-// $('.artwork-control').imagesLoaded().progress( function() {
-//   $('.artwork-control').masonry(); // 渲染整體畫面
-// });
+
+// market control 
+$('.triangle-value').on('click',function(e){
+  $(this).toggleClass('change');
+  $(this).parent().find('#icon-plus').toggleClass('open');
+  $(this).parent().find('#icon-minus').toggleClass('open');
+});
+// 避免點擊icon無法更換
+$('#icon-plus').on('click',function(e){
+  $('.triangle-value').toggleClass('change')
+  $(this).toggleClass('open')
+  $('#icon-minus').toggleClass('open')
+})
+$('#icon-minus').on('click',function(e){
+  $(this).toggleClass('open')
+  $('.triangle-value').toggleClass('change')
+  $('#icon-plus').toggleClass('open')
+})
+
+// 瀑布流 start
+$('.artwork-control').imagesLoaded().progress( function() {
+  $('.artwork-control').masonry(); // 渲染整體畫面
+});
+// 瀑布流 end
+
