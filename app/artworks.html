@@ -1,0 +1,357 @@
+---
+title: 作品系列
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<div class="artwork pt-lg-10 pb-lg-20">
+    <div class="container">
+
+        <div class="row">
+            <!-- 左邊選單 -->
+            <div class="col-lg-3">
+                <ul class="bg-light list-unstyled">
+                    <li class="p-6 border-bottom">
+                        <a class=" d-flex justify-content-between align-items-center text-dark fw-bold mb-4"
+                            data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true"
+                            aria-controls="collapseExample">
+                            網路
+                            <i class="fa-solid fa-angle-up"></i>
+                        </a>
+
+                        <div class="collapse show" id="collapseExample">
+                            <label for="ethereum" class="d-flex justify-content-between align-items-center mb-2"
+                                style="cursor: pointer;">以太坊
+                                <input type="checkbox" id="ethereum">
+                            </label>
+                            <label for="ethereum" class="d-flex justify-content-between align-items-center"
+                                style="cursor: pointer;">BNB 智能鏈
+                                <input type="checkbox" id="ethereum">
+                            </label>
+                        </div>
+                    </li>
+
+                    <li class="p-6 border-bottom">
+                        <a class=" d-flex justify-content-between align-items-center text-dark fw-bold mb-4"
+                            data-bs-toggle="collapse" href="#state" role="button" aria-expanded="true"
+                            aria-controls="state">
+                            狀態
+                            <i class="fa-solid fa-angle-up"></i>
+                        </a>
+
+                        <div class="collapse show" id="state">
+                            <label for="ethereum" class="d-flex justify-content-between align-items-center mb-2"
+                                style="cursor: pointer;">僅展示
+                                <input type="checkbox" id="ethereum">
+                            </label>
+                            <label for="ethereum" class="d-flex justify-content-between align-items-center"
+                                style="cursor: pointer;">拍賣中
+                                <input type="checkbox" id="ethereum">
+                            </label>
+                        </div>
+                    </li>
+
+                    <li class="p-6 border-bottom">
+                        <a class=" d-flex justify-content-between align-items-center text-dark fw-bold mb-4"
+                            data-bs-toggle="collapse" href="#pay" role="button" aria-expanded="true"
+                            aria-controls="pay">
+                            價格
+                            <i class="fa-solid fa-angle-up"></i>
+                        </a>
+
+                        <div class="collapse show" id="pay">
+                            <div class="d-flex align-items-center">
+
+                                <select name="price" id="price" class="font-notoSans me-2 px-1"
+                                    style="width: 30%; height: 40px;">
+                                    <option value="eth">ETH</option>
+                                </select>
+                                <input type="number" class="font-notoSans me-2" style="width: 30%; height: 40px;">
+                                <span>-</span>
+                                <input type="number" class="font-notoSans ms-2" style="width: 30%; height: 40px;">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="p-6 border-bottom">
+                        <p class="text-gray-600 fw-bold mb-6">屬性</p>
+                        <ul class="list-unstyled mb-0 ">
+                            <li>
+                                <a class=" d-flex justify-content-between align-items-center text-dark fw-bold mb-4"
+                                    data-bs-toggle="collapse" href="#thing" role="button" aria-expanded="true"
+                                    aria-controls="thing">
+                                    品種
+                                    <i class="fa-solid fa-angle-up"></i>
+                                </a>
+                                <div class="collapse show mb-6" id="thing">
+                                    <label for="bird1" class="d-flex justify-content-between align-items-center mb-2"
+                                        style="cursor: pointer;">八哥
+                                        <input type="checkbox" id="bird1">
+                                    </label>
+                                    <label for="bird2" class="d-flex justify-content-between align-items-center mb-2"
+                                        style="cursor: pointer;">虎皮鸚鵡
+                                        <input type="checkbox" id="bird2">
+                                    </label>
+                                    <label for="bird3" class="d-flex justify-content-between align-items-center mb-2"
+                                        style="cursor: pointer;">太平鳥
+                                        <input type="checkbox" id="bird3">
+                                    </label>
+                                    <label for="bird4" class="d-flex justify-content-between align-items-center"
+                                        style="cursor: pointer;">畫眉鳥
+                                        <input type="checkbox" id="bird4">
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <a class=" d-flex justify-content-between align-items-center text-dark fw-bold mb-4"
+                                    data-bs-toggle="collapse" href="#number" role="button" aria-expanded="true"
+                                    aria-controls="number">
+                                    鳥的數量
+                                    <i class="fa-solid fa-angle-up"></i>
+                                </a>
+                                <div class="collapse show mb-6" id="number">
+                                    <label for="number1"
+                                        class="d-flex justify-content-between align-items-center mb-2 font-noto"
+                                        style="cursor: pointer;">1
+                                        <input type="checkbox" id="number1">
+                                    </label>
+                                    <label for="number2"
+                                        class="d-flex justify-content-between align-items-center mb-2 font-noto"
+                                        style="cursor: pointer;">2
+                                        <input type="checkbox" id="number2">
+                                    </label>
+                                    <label for="number3"
+                                        class="d-flex justify-content-between align-items-center font-noto"
+                                        style="cursor: pointer;">3
+                                        <input type="checkbox" id="number3">
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <a class=" d-flex justify-content-between align-items-center text-dark fw-bold mb-4"
+                                    data-bs-toggle="collapse" href="#flower" role="button" aria-expanded="true"
+                                    aria-controls="flower">
+                                    是否有花草
+                                    <i class="fa-solid fa-angle-up"></i>
+                                </a>
+                                <div class="collapse show mb-6" id="flower">
+                                    <label for="yes" class="d-flex justify-content-between align-items-center mb-2"
+                                        style="cursor: pointer;">有
+                                        <input type="checkbox" id="yes">
+                                    </label>
+                                    <label for="no" class="d-flex justify-content-between align-items-center"
+                                        style="cursor: pointer;">無
+                                        <input type="checkbox" id="no">
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <a class=" d-flex justify-content-between align-items-center text-dark fw-bold mb-4"
+                                    data-bs-toggle="collapse" href="#birdColor" role="button" aria-expanded="true"
+                                    aria-controls="birdColor">
+                                    鳥的顏色
+                                    <i class="fa-solid fa-angle-up"></i>
+                                </a>
+                                <div class="collapse show" id="birdColor">
+                                    <label for="darkBody" class="d-flex justify-content-between align-items-center mb-2"
+                                        style="cursor: pointer;">黑色
+                                        <input type="checkbox" id="darkBody">
+                                    </label>
+                                    <label for="greenBody" class="d-flex justify-content-between align-items-center"
+                                        style="cursor: pointer;">綠色
+                                        <input type="checkbox" id="greenBody">
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="col">
+                <div class="d-flex align-items-center mb-1">
+                    <img src="./assets/images/week8-202207/artist01.jpg" alt="" class="img-fluid rounded-circle"
+                        style="width: 32px; height: 32px;">
+                    <p class="fw-bold ms-6">Michael</p>
+                </div>
+
+                <div class="row align-items-center mb-10">
+                    <div class="col-7">
+                        <h2 class="fw-bold mb-2 ">我家外面的鳥</h2>
+                        <p>家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+                    </div>
+                    <div class="col ">
+                        <ul class="row list-unstyled  mb-0 bg-light border">
+                            <li class="col px-2 py-4 text-center pseudo-border">
+                                <p>項目</p>
+                                <p>6.4 k</p>
+                            </li>
+                            <li class="col px-2 py-4 text-center pseudo-border">
+                                <p>擁有者</p>
+                                <p>2.5 k</p>
+                            </li>
+                            <li class="col px-2 py-4 text-center pseudo-border">
+                                <p>底價</p>
+                                <p><i class="fa-brands fa-ethereum"></i>1.38 k</p>
+                            </li>
+                            <li class="col px-2 py-4 text-center">
+                                <p>總額</p>
+                                <p>2.8 k</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="text-end ">
+                    <a class="btn btn-outline-dark px-6 py-2">最新上架<i class="fa-solid fa-sort"></i></a>
+                </div>
+
+                <div class="artwork ">
+                    
+                        
+                        <div class="row artwork-control pt-lg-10  "
+                            data-masonry='{"percentPosition": true }'>
+                            <div class="col-lg-4 col-md-6 col-12 mb-lg-12 mb-6">
+                                <div class="card border-0  ">
+                                    <div class="p-lg-6">
+                                        <div class="overlay bg-light position-relative ">
+                                            <img class="img-fluid card-img-top h-100"
+                                                src="./assets/images/week8-202207/art20.jpg" alt="">
+                                            <div class="overlay-text position-absolute text-light">
+                                                <p>這兩隻也太像企鵝了吧</p>
+                                                <p class="mb-0">
+                                                    <i class="fa-brands fa-ethereum"></i>
+                                                    300
+                                                </p>
+                                            </div>
+                                            <a href="#"
+                                                class="overlay-link position-absolute triangle btn btn-light px-12 py-2 lh-1">MORE</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body border-bottom border-dark bg-gray-300 px-lg-0 py-lg-4 p-2">
+                                        <p class="card-title fw-bold mb-0">這兩隻也太像企鵝了吧</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-lg-12 mb-6">
+                                <div class="card border-0  ">
+                                    <div class="p-lg-6">
+                                        <div class="overlay bg-light position-relative ">
+                                            <img class="img-fluid card-img-top h-100"
+                                                src="./assets/images/week8-202207/art21.jpg" alt="">
+                                            <div class="overlay-text position-absolute text-light">
+                                                <p>3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                                <p class="mb-0">
+                                                    <i class="fa-brands fa-ethereum"></i>
+                                                    300
+                                                </p>
+                                            </div>
+                                            <a href="#"
+                                                class="overlay-link position-absolute triangle btn btn-light px-12 py-2 lh-1">MORE</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body border-bottom border-dark bg-gray-300 px-lg-0 py-lg-4 p-2">
+                                        <p class="card-title fw-bold mb-0">兩情相悅</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-lg-12 mb-6">
+                                <div class="card border-0  ">
+                                    <div class="p-lg-6">
+                                        <div class="overlay bg-light position-relative ">
+                                            <img class="img-fluid card-img-top h-100"
+                                                src="./assets/images/week8-202207/art22.jpg" alt="">
+                                            <div class="overlay-text position-absolute text-light">
+                                                <p>群聚的小鳥們</p>
+                                                <p class="mb-0">
+                                                    <i class="fa-brands fa-ethereum"></i>
+                                                    300
+                                                </p>
+                                            </div>
+                                            <a href="#"
+                                                class="overlay-link position-absolute triangle btn btn-light px-12 py-2 lh-1">MORE</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body border-bottom border-dark bg-gray-300 px-lg-0 py-lg-4 p-2">
+                                        <p class="card-title fw-bold mb-0">群聚的小鳥們</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-lg-12 mb-6">
+                                <div class="card border-0  ">
+                                    <div class="p-lg-6">
+                                        <div class="overlay bg-light position-relative ">
+                                            <img class="img-fluid card-img-top h-100"
+                                                src="./assets/images/week8-202207/art23.jpg" alt="">
+                                            <div class="overlay-text position-absolute text-light">
+                                                <p>與你分享的快樂勝過獨自擁有</p>
+                                                <p class="mb-0">
+                                                    <i class="fa-brands fa-ethereum"></i>
+                                                    300
+                                                </p>
+                                            </div>
+                                            <a href="#"
+                                                class="overlay-link position-absolute triangle btn btn-light px-12 py-2 lh-1">MORE</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body border-bottom border-dark bg-gray-300 px-lg-0 py-lg-4 p-2">
+                                        <p class="card-title fw-bold mb-0">與你分享的快樂勝過獨自擁有</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-lg-12 mb-6">
+                                <div class="card border-0  ">
+                                    <div class="p-lg-6">
+                                        <div class="overlay bg-light position-relative ">
+                                            <img class="img-fluid card-img-top h-100"
+                                                src="./assets/images/week8-202207/art24.jpg" alt="">
+                                            <div class="overlay-text position-absolute text-light">
+                                                <p>會唱metal的鳥</p>
+                                                <p class="mb-0">
+                                                    <i class="fa-brands fa-ethereum"></i>
+                                                    300
+                                                </p>
+                                            </div>
+                                            <a href="#"
+                                                class="overlay-link position-absolute triangle btn btn-light px-12 py-2 lh-1">MORE</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body border-bottom border-dark bg-gray-300 px-lg-0 py-lg-4 p-2">
+                                        <p class="card-title fw-bold mb-0">會唱metal的鳥</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-lg-12 mb-6">
+                                <div class="card border-0  ">
+                                    <div class="p-lg-6">
+                                        <div class="overlay bg-light position-relative ">
+                                            <img class="img-fluid card-img-top h-100"
+                                                src="./assets/images/week8-202207/art25.jpg" alt="">
+                                            <div class="overlay-text position-absolute text-light">
+                                                <p>一大一小兩個恰恰好</p>
+                                                <p class="mb-0">
+                                                    <i class="fa-brands fa-ethereum"></i>
+                                                    300
+                                                </p>
+                                            </div>
+                                            <a href="#"
+                                                class="overlay-link position-absolute triangle btn btn-light px-12 py-2 lh-1">MORE</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body border-bottom border-dark bg-gray-300 px-lg-0 py-lg-4 p-2">
+                                        <p class="card-title fw-bold mb-0">一大一小兩個恰恰好</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
