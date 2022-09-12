@@ -1,5 +1,0 @@
-@mixin RWD($size){
-    @media(max-width:$size){
-        @content
-    }
-}

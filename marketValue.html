@@ -1,10 +1,103 @@
----
-title: 市值
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<div class="market pt-lg-10 pb-lg-20 pt-6 pb-10 ">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    市值
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Paytone+One&family=Squada+One&display=swap"
+    rel="stylesheet">
+  <!-- fontawesome.com -->
+  <script src="https://kit.fontawesome.com/fc0067d5fd.js" crossorigin="anonymous"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- masonry 瀑布流 -->
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+    async></script>
+  <!-- imagesLoaded -->
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+</head>
+
+<body class="bg-gray-300">
+
+  <!-- 會用到的ICON -->
+  <!-- <i class="fa-solid fa-magnifying-glass"></i>
+  <i class="fa-solid fa-wallet"></i>
+  <i class="fa-brands fa-ethereum"></i>
+  <i class="fa-solid fa-bars"></i>
+  <i class="fa-brands fa-discord"></i>
+  <i class="fa-brands fa-facebook-f"></i>
+  <i class="fa-solid fa-globe"></i>
+  <i class="fa-brands fa-twitter"></i>
+  <i class="fa-solid fa-sort"></i>
+  <i class="fa-solid fa-plus"></i>
+  <i class="fa-solid fa-minus"></i>
+  <i class="fa-solid fa-check"></i> -->
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary border-bottom border-dark p-0">
+      <div class="container">
+        <a class="navbar-brand " href="index.html">
+          <img class="img-fluid" src="./assets/images/week8-202207/logo.svg" alt="">
+        </a>
+
+        <div class="d-flex align-items-center iconAll ">
+          <div class="w-100 d-flex d-lg-none align-items-center justify-content-between ">
+            <div class="closeControl close ">
+              <i class="fa-solid fa-angle-left fs-5 me-4 nav-link upLavel p-0" style=" cursor: pointer;" ></i>
+              <input type="text" class="bg-secondary border-0 me-6 " id="searchMobile" placeholder="搜尋作品名稱、藝術家名稱">
+            </div>
+            <label for="search" class="form-label mb-0 nav-link searchBtn lh-1" style="cursor: pointer;">
+              <i class="fa-solid fa-magnifying-glass fs-5"></i>
+            </label>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav align-items-center ms-auto mb-2 mb-lg-0 ">
+            <!-- 手機會消失 -->
+            <li class="nav-item d-lg-flex d-none align-items-center border-start border-dark py-8 px-12 ">
+              <input type="text" class="bg-secondary border-0 me-6" id="search" placeholder="搜尋作品名稱、藝術家名稱">
+              <label for="search" class="form-label mb-0 nav-link p-0" style="cursor: pointer;">
+                <i class="fa-solid fa-magnifying-glass fs-5"></i>
+              </label>
+            </li>
+
+            <li class="nav-item border-start-lg border-bottom border-dark py-lg-8 px-lg-12 py-6 text-center " style="margin-bottom: -5px ;">
+              <a class="nav-link fw-bold p-0 fs-lg-8 fs-7" href="probe.html">探索</a>
+            </li>
+            <li class="nav-item border-start-lg  border-dark py-lg-8 px-lg-12 p-6 text-center">
+              <a class="nav-link fw-bold p-0 fs-lg-8 fs-7" href="marketValue.html">市值</a>
+            </li>
+            <li class="nav-item border-start-lg  border-dark py-lg-8 ps-lg-12 pb-6 text-center">
+              <a class="nav-link  p-0" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fa-solid fa-wallet fs-5 d-none d-lg-block"></i>
+                <p class="d-lg-none d-block fs-7 px-6 py-3 btn btn-primary border text-light">連結錢包</p>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="market pt-lg-10 pb-lg-20 pt-6 pb-10 ">
     <div class="container">
         <h1 class="text-center fw-bold mb-lg-6 mb-4">市價排行榜</h1>
         <h6 class="text-center mb-lg-12 mb-8 font-noto">NFT系列藝術作品排行榜！全球注目指標</h6>
@@ -633,3 +726,86 @@ current: index
         </ul>
     </div>
 </div>
+
+    <footer class="bg-secondary  pt-6 pb-4 position-relative border-top border-dark ">
+      <p class="text-center mb-0 ">© ART NFT. All Rights Reserved</p>
+    </footer>
+
+    <!-- 錢包 Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content ">
+          <div class="modal-header border-dark text-center justify-content-center">
+            <h5 class="modal-title" id="exampleModalLabel">連結你的錢包</h5>
+          </div>
+          <div class="modal-body py-6">
+            <ul class="row g-2 list-unstyled mb-0">
+              <li class="col-lg-6">
+                <a href="#" class="btn-wallet p-4 d-block">
+                  <img class="img-fluid me-4" src="./assets/images/week8-202207/logo/connect01.png" alt=""
+                    style="width: 16px;">
+                  MetaMask
+                </a>
+              </li>
+              <li class="col-lg-6">
+                <a href="#" class="btn-wallet p-4 d-block">
+                  <img class="img-fluid me-4" src="./assets/images/week8-202207/logo/connect02.png" alt=""
+                    style="width: 16px;">
+                    Coinbase Wallet
+                </a>
+              </li>
+              <li class="col-lg-6">
+                <a href="#" class="btn-wallet p-4 d-block">
+                  <img class="img-fluid me-4" src="./assets/images/week8-202207/logo/connect03.png" alt=""
+                    style="width: 16px;">
+                    WalletConnect
+                </a>
+              </li>
+              <li class="col-lg-6">
+                <a href="#" class="btn-wallet p-4 d-block">
+                  <img class="img-fluid me-4" src="./assets/images/week8-202207/logo/connect04.png" alt=""
+                    style="width: 16px;">
+                    Phantom
+                </a>
+              </li>
+              <li class="col-lg-6">
+                <a href="#" class="btn-wallet p-4 d-block">
+                  <img class="img-fluid me-4" src="./assets/images/week8-202207/logo/connect05.png" alt=""
+                    style="width: 16px;">
+                    Glow
+                </a>
+              </li>
+              <li class="col-lg-6">
+                <a href="#" class="btn-wallet p-4 d-block">
+                  <img class="img-fluid me-4" src="./assets/images/week8-202207/logo/connect06.png" alt=""
+                    style="width: 16px;">
+                    Fortmatic
+                </a>
+              </li>
+              
+
+            </ul>
+          </div>
+          <div class="modal-footer justify-content-center border-0 p-0 pb-8">
+            <button type="button" class="btn btn-primary border text-light px-12 py-2 m-0" data-bs-dismiss="modal">連結錢包</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/vendors.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Masonry -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+      async></script>
+    <!-- Masonry imagesLoaded -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
